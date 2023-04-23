@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Verify Everyone",
+  "author": "Alex MacArthur",
+  "description": "Verify everyone on Twitter.",
+  "version": "0.0.1",
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "js": ["verify-everyone.js"],
+      "matches": ["https://twitter.com/*"],
+      "run_at": "document_idle"
+    }
+  ]
+}
